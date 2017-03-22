@@ -13,7 +13,7 @@ class CreateComidasTable extends Migration
     public function up()
     {
         Schema::create('comidas', function (Blueprint $table) {
-            $table->increments('id_comida');
+            $table->increments('id');
             $table->string('descripcion_comida');
             $table->string('valor_comida');
             $table->string('valor_comida_tiquetera');

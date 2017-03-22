@@ -1,0 +1,13 @@
+.section{
+	border: 1px solid red;
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+.formulario{
+	width: 30%;
+	border: 1px solid blue;
+	padding: 10px;
+	
+}

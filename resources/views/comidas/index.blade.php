@@ -1,0 +1,1 @@
+{{$comidas->descripcion_comida}}

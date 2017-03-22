@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nombre', 'apellido', 'email','tipo','contrasena'
     ];
 
     /**
@@ -21,6 +21,16 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'contrasena', 'remember_token',
     ];
+
+
+    public function tiqueteras(){
+        return $this->hasMany('App\Tiquetera','id_user');
+    }
+
+    public function descargos_tiq(){
+        return $this->hasMany('App\Descargos_tiq');
+    }
+
 }
